@@ -3,7 +3,7 @@ IntraVault Native — CentOS Stream 9 설치 및 실행 안내
 
 적용 대상
 - 저장소: SKT-ALEPH-IntraVault/IntraVault_native
-- 권장 설치 위치: /opt/intravault
+- 권장 설치 위치: /opt/intravault_native
 - 기본 포트: 18080/tcp
 - 웹 루트: public/
 
@@ -54,33 +54,33 @@ mariadb-secure-installation
 방법 A — Git으로 직접 받기:
 
 cd /opt
-git clone https://github.com/SKT-ALEPH-IntraVault/IntraVault_native.git intravault
+git clone https://github.com/SKT-ALEPH-IntraVault/IntraVault_native.git intravault_native
 
 방법 B — 다른 PC에서 파일로 복사하기:
 
 원본 PC의 IntraVault_native 저장소 루트에서 .git, .env, vendor를 제외해 묶습니다.
 
-tar --exclude=.git --exclude=.env --exclude=vendor -czf intravault-native.tar.gz .
-scp intravault-native.tar.gz root@CENTOS_IP:/root/
+tar --exclude=.git --exclude=.env --exclude=vendor -czf intravault_native.tar.gz .
+scp intravault_native.tar.gz root@CENTOS_IP:/root/
 
 CentOS에서 풉니다.
 
-mkdir -p /opt/intravault
-tar -xzf /root/intravault-native.tar.gz -C /opt/intravault
+mkdir -p /opt/intravault_native
+tar -xzf /root/intravault_native.tar.gz -C /opt/intravault_native
 
-최종적으로 /opt/intravault/artisan, /opt/intravault/composer.json,
-/opt/intravault/native 디렉터리가 보여야 합니다.
+최종적으로 /opt/intravault_native/artisan, /opt/intravault_native/composer.json,
+/opt/intravault_native/native 디렉터리가 보여야 합니다.
 
 
 4. 서비스 계정과 파일 권한 준비 (root)
 ---------------------------------------
 
-id intravault >/dev/null 2>&1 || useradd --system --home-dir /opt/intravault --shell /sbin/nologin intravault
-cd /opt/intravault
+id intravault >/dev/null 2>&1 || useradd --system --home-dir /opt/intravault_native --shell /sbin/nologin intravault
+cd /opt/intravault_native
 mkdir -p vendor storage/app/private storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache
-chown -R root:root /opt/intravault
+chown -R root:root /opt/intravault_native
 chown -R intravault:intravault vendor storage bootstrap/cache
-chmod 755 /opt/intravault
+chmod 755 /opt/intravault_native
 
 애플리케이션 코드는 root 소유 읽기 전용으로 두고, 실행 계정에는 vendor,
 storage, bootstrap/cache만 쓰기 권한을 줍니다.
@@ -89,7 +89,7 @@ storage, bootstrap/cache만 쓰기 권한을 줍니다.
 5. 환경변수와 데이터베이스 설정 (root)
 ----------------------------------------
 
-cd /opt/intravault
+cd /opt/intravault_native
 cp -n .env.example .env
 nano .env
 
@@ -125,7 +125,7 @@ chmod 600 native/database.sql
 6. 데이터베이스와 계정 생성 — 최초 한 번만 (root)
 ---------------------------------------------------
 
-cd /opt/intravault
+cd /opt/intravault_native
 mariadb --protocol=socket < native/database.sql
 
 확인:
@@ -143,7 +143,7 @@ native/database.sql은 재실행용 스크립트가 아닙니다. 이미 DB와 �
 7. PHP 라이브러리 설치와 앱 초기화 (root에서 runuser 사용)
 ------------------------------------------------------------
 
-cd /opt/intravault
+cd /opt/intravault_native
 runuser -u intravault -- bash native/setup.sh
 
 setup.sh가 수행하는 작업:
@@ -166,12 +166,12 @@ runuser -u intravault -- php artisan intravault:create-admin
 
 로컬 CentOS에서만 확인:
 
-cd /opt/intravault
+cd /opt/intravault_native
 runuser -u intravault -- bash native/start.sh
 
 다른 PC에서 접속 확인:
 
-cd /opt/intravault
+cd /opt/intravault_native
 runuser -u intravault -- env INTRAVAULT_BIND=0.0.0.0 bash native/start.sh
 
 브라우저:
@@ -204,10 +204,10 @@ Requires=mariadb.service
 Type=simple
 User=intravault
 Group=intravault
-WorkingDirectory=/opt/intravault
+WorkingDirectory=/opt/intravault_native
 Environment=INTRAVAULT_BIND=0.0.0.0
 Environment=INTRAVAULT_PORT=18080
-ExecStart=/usr/bin/bash /opt/intravault/native/start.sh
+ExecStart=/usr/bin/bash /opt/intravault_native/native/start.sh
 Restart=on-failure
 RestartSec=5
 UMask=0027
@@ -215,7 +215,7 @@ NoNewPrivileges=true
 PrivateTmp=true
 ProtectHome=true
 ProtectSystem=full
-ReadWritePaths=/opt/intravault/storage /opt/intravault/bootstrap/cache
+ReadWritePaths=/opt/intravault_native/storage /opt/intravault_native/bootstrap/cache
 
 [Install]
 WantedBy=multi-user.target
@@ -263,7 +263,7 @@ journalctl -u intravault -n 100 --no-pager
 
 Laravel 로그:
 
-tail -f /opt/intravault/storage/logs/laravel.log
+tail -f /opt/intravault_native/storage/logs/laravel.log
 
 MariaDB 로그:
 
@@ -289,14 +289,14 @@ systemctl disable --now intravault
 서비스를 정지하고 백업한 뒤 새 파일로 교체합니다. .env, storage, DB는 보존합니다.
 
 systemctl stop intravault
-cd /opt/intravault
+cd /opt/intravault_native
 cp .env /root/intravault.env.backup
 tar -czf /root/intravault-storage-backup.tar.gz storage
 mariadb-dump --protocol=socket intravault_native > /root/intravault-db-backup.sql
 
 새 코드 복사 후:
 
-chown -R root:root /opt/intravault
+chown -R root:root /opt/intravault_native
 mkdir -p vendor storage/app/private storage/framework/sessions storage/framework/views storage/framework/cache/data storage/logs bootstrap/cache
 chown -R intravault:intravault vendor storage bootstrap/cache
 chown intravault:intravault .env
@@ -314,7 +314,7 @@ systemctl start intravault
 - DB 연결 실패: systemctl status mariadb, .env의 DB_* 값, 비밀번호 일치 여부 확인
 - 권한 오류: storage와 bootstrap/cache가 intravault 계정 소유인지 확인
 - 외부 접속 불가: INTRAVAULT_BIND=0.0.0.0, firewalld, VM 네트워크, 보안그룹 확인
-- 업로드 용량 오류: PHP_INI_SCAN_DIR에 /opt/intravault/native가 포함되는지 확인
+- 업로드 용량 오류: PHP_INI_SCAN_DIR에 /opt/intravault_native/native가 포함되는지 확인
 - 설정 변경 미반영: runuser -u intravault -- php artisan optimize:clear 후 서비스 재시작
 
 
@@ -324,7 +324,7 @@ systemctl start intravault
 systemctl is-active mariadb
 systemctl is-active intravault
 curl -I http://127.0.0.1:18080/up
-cd /opt/intravault
+cd /opt/intravault_native
 runuser -u intravault -- php artisan intravault:check
 
 브라우저에서 관리자 로그인, 문서 목록, 훈련자료실, Security Lab 화면을 차례로
