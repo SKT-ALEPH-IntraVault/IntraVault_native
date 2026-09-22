@@ -1,0 +1,61 @@
+{
+  "environment": "http://localhost:18082",
+  "checks": [
+    {
+      "name": "UX-03 latest search wins with reversed responses",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-04 latest document wins with reversed responses",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-11 keyboard close returns focus",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-03 list pagination is partial and recoverable",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-01 to UX-04 issue no full document navigation",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-14 acknowledged mutation with lost response is not retried",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-08 practice upload keeps form node and current department",
+      "result": "PASS"
+    },
+    {
+      "name": "S11 marker semantics match normal HTML in partial drawer",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-04 mobile drawer, focus containment and reduced motion",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-14 denied revalidation removes stale content",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-14 session expiry leads to login rather than embedded login form",
+      "result": "PASS"
+    },
+    {
+      "name": "temporary documents removed and all controls ON",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "createdDocuments": [
+    "http://localhost:18082/documents/53",
+    "http://localhost:18082/documents/54",
+    "http://localhost:18082/documents/55",
+    "http://localhost:18082/documents/56"
+  ],
+  "practiceUpload": "workspace-ui-1789104017455.txt"
+}

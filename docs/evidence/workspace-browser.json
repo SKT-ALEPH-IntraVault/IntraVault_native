@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "name": "UX-01 sidebar and main document persist",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-02 department clears query and updates list only",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-04/11 drawer history and list preservation",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-07 create and file upload",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-05 confirmed favorite only and no history entry",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-06 share add and remove",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-07/14 edit validation retains input and dirty close",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-12 fresh direct link, reload and native download",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-09 delete cancel and confirmed removal",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-10 security control and preset server state",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-01 admin form and list update",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-01 no full document reload",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "environment": "http://localhost:18082"
+}

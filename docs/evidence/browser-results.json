@@ -1,0 +1,41 @@
+{
+  "time": "2026-09-10T07:23:38.702Z",
+  "checks": [
+    {
+      "name": "관리자 및 사용자 주요 화면",
+      "status": "PASS",
+      "detail": "9 routes render HTTP 200 without page errors."
+    },
+    {
+      "name": "모바일 문서 화면",
+      "status": "PASS",
+      "detail": "390 px viewport screenshot captured."
+    },
+    {
+      "name": "V04 실제 HTTP CSRF OFF→ON→OFF",
+      "status": "PASS",
+      "detail": "419 → 302 → 419 for the same tokenless cross-site request."
+    },
+    {
+      "name": "V07 다른 사용자 브라우저의 저장된 스크립트 실행",
+      "status": "PASS",
+      "detail": "OFF no execution; ON marker 707; OFF no execution. Fixture restored."
+    },
+    {
+      "name": "V10 세션 고정 비교 및 로그아웃 쿠키 재사용 차단",
+      "status": "PASS",
+      "detail": "Pre-login cookie replay OFF 302 / ON 200 / OFF 302; authenticated cookie rejected after logout in all states."
+    },
+    {
+      "name": "Apache·PHP·Laravel 실제 파일 크기 경계",
+      "status": "PASS",
+      "detail": "41,943,040 bytes accepted; 41,943,041 bytes rejected (422). Uploaded boundary file removed."
+    },
+    {
+      "name": "관리자 계정 정지와 기존 세션 차단",
+      "status": "PASS",
+      "detail": "Existing browser cookie rejected after suspension; fixture account restored active."
+    }
+  ],
+  "pageErrors": []
+}

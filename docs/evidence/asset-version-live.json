@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "time": "2026-09-11T02:01:10.487Z",
+  "url": "https://intravault.duckdns.org",
+  "legacyAssetRequests": 0,
+  "checks": [
+    {
+      "url": "/documents",
+      "grid": "grid",
+      "card": 84,
+      "back": 44
+    },
+    {
+      "url": "/lab/search",
+      "grid": "grid",
+      "card": 84,
+      "back": 44
+    }
+  ],
+  "assertions": [
+    "All four asset URLs carry their exact content hash",
+    "Legacy app.css route is never requested",
+    "Both pages retain grid/card/back styling",
+    "Mobile card remains 76px"
+  ]
+}

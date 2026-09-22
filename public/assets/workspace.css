@@ -1,0 +1,24 @@
+/* Incremental Blade workspace; existing visual tokens and local fonts are retained. */
+.workspace-notice:empty{display:none}.workspace-notice{position:fixed;right:24px;bottom:24px;z-index:1080;max-width:min(460px,calc(100vw - 32px));box-shadow:0 8px 30px #20345420}.workspace-notice .btn{margin:8px 8px 0 0}
+.workspace-drawer{position:fixed;inset:12px 12px 12px auto;width:min(820px,calc(100vw - 40px));max-width:none;max-height:calc(100dvh - 24px);height:calc(100dvh - 24px);margin:0;border:1px solid var(--line);border-radius:26px;padding:0;color:var(--ink);background:#f4f6fa;box-shadow:-12px 0 60px #20345422;overflow:auto}
+.workspace-drawer[open]{animation:workspace-open .18s ease-out}.workspace-drawer::backdrop{background:#20345433;backdrop-filter:blur(2px)}
+@keyframes workspace-open{from{transform:translateX(28px);opacity:.4}to{transform:translateX(0);opacity:1}}
+.workspace-drawer-bar{position:sticky;top:0;z-index:3;background:#f4f6faf2;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.workspace-drawer-bar strong{font-size:13px}.workspace-drawer .page-content{padding:22px;max-width:none}.workspace-drawer .page-heading{margin-bottom:20px}.workspace-drawer h1,.workspace-drawer .page-heading h2{font-size:25px}.workspace-drawer .page-footer{display:none}.workspace-drawer .col-lg-8,.workspace-drawer .col-xl-7{width:100%}
+.workspace-drawer > .workspace-notice{position:static;max-width:none;margin:16px 22px 0;box-shadow:none}
+.workspace-feedback{margin:12px 0;font-size:13px}
+.workspace-confirm{border:1px solid var(--line);border-radius:24px;max-width:min(440px,calc(100vw - 32px));padding:26px;color:var(--ink)}.workspace-confirm::backdrop{background:#20345444}.workspace-confirm p{white-space:pre-wrap;overflow-wrap:anywhere}.workspace-confirm-actions{display:flex;justify-content:flex-end;gap:10px}
+.workspace-drawer :focus-visible{outline:3px solid #9eb6ff;outline-offset:3px}
+@media(max-width:600px){.workspace-drawer{inset:0;width:100%;height:100dvh;max-height:100dvh;border-radius:0}.workspace-drawer .page-content{padding:18px 14px}.workspace-drawer .meta-grid{grid-template-columns:1fr 1fr}.workspace-notice{right:16px;bottom:16px}}
+@media(prefers-reduced-motion:reduce){.workspace-drawer[open]{animation:none}.workspace-tab{transition:none}}
+
+/* Stable hubs: only their view or data regions change. */
+.workspace-hub-heading{margin-bottom:24px}.workspace-hub-heading h1{font-size:30px;font-weight:750;letter-spacing:-.04em;margin:10px 0}.workspace-hub-heading p{color:var(--muted);font-size:13px;margin:0}
+.workspace-tabs{display:flex;gap:6px;padding:6px;background:#e9eef8;border:1px solid #e3e9f4;border-radius:19px;width:fit-content;max-width:100%;overflow-x:auto;margin-bottom:26px}
+.workspace-tab{display:block;white-space:nowrap;padding:11px 19px;color:#627495;text-decoration:none;border-radius:14px;font-weight:650;font-size:13px;transition:background .18s,color .18s,box-shadow .18s}
+.workspace-tab:hover{background:#f8faff;color:#365bc1}.workspace-tab.active{background:white;color:#365de1;box-shadow:0 3px 12px #243b6910}
+.workspace-hub #workspace-view>.page-heading{margin-bottom:22px;min-height:44px}.workspace-hub #workspace-view>.page-heading .eyebrow,.workspace-hub #workspace-view>.page-heading p{display:none}.workspace-hub #workspace-view>.page-heading h2{font-size:19px;font-weight:700;margin:0;letter-spacing:-.03em}
+#workspace-view:focus{outline:none}#workspace-view:focus-visible{outline:2px solid #9eb6ff;outline-offset:6px;border-radius:18px}
+@media(max-width:600px){.workspace-hub-heading h1{font-size:25px}.workspace-tabs{width:100%;gap:2px;padding:5px}.workspace-tab{padding:10px 13px;font-size:12px}.workspace-hub-heading{margin-bottom:18px}}
+
+@media(prefers-reduced-motion:reduce){.workspace-tab{transition:none}}

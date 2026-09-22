@@ -1,0 +1,13 @@
+NAME               IMAGE            COMMAND                  SERVICE   CREATED          STATUS                            PORTS
+intravault-app-1   intravault-app   "intravault-entrypoi…"   app       4 seconds ago    Up 2 seconds (health: starting)   127.0.0.1:18080->80/tcp
+intravault-db-1    mariadb:11.4     "docker-entrypoint.s…"   db        44 minutes ago   Up 37 minutes (healthy)           3306/tcp
++----------------------+-------------------------+
+| 항목                 | 값                      |
++----------------------+-------------------------+
+| Laravel              | 13.31.0                 |
+| Database             | 11.4.13-MariaDB-ubu2404 |
+| Users                | 4                       |
+| Documents            | 4                       |
+| Lab enabled switches | 0                       |
+| Training DB          | intravault_lab          |
++----------------------+-------------------------+

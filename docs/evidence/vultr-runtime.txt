@@ -1,0 +1,35 @@
+Thu Sep 10 08:27:40 AM UTC 2026
+x86_64
+Docker version 29.8.0, build 88096ef
+Docker Compose version v5.5.1
+NAME                        IMAGE                 COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+intravault-prod-app-1       intravault-prod-app   "intravault-entrypoi…"   app       14 minutes ago   Up 13 minutes             80/tcp
+intravault-prod-caddy-1     caddy:2-alpine        "caddy run --config …"   caddy     13 minutes ago   Up 13 minutes             0.0.0.0:80->80/tcp, [::]:80->80/tcp, 0.0.0.0:443->443/tcp, [::]:443->443/tcp, 443/udp, 2019/tcp
+intravault-prod-db-1        mariadb:11.4          "docker-entrypoint.s…"   db        14 minutes ago   Up 14 minutes (healthy)   3306/tcp
+intravault-prod-gateway-1   nginx:1.28-alpine     "/docker-entrypoint.…"   gateway   16 minutes ago   Up 13 minutes             80/tcp, 127.0.0.1:18081->8080/tcp
++----------------------+-------------------------+
+| 항목                 | 값                      |
++----------------------+-------------------------+
+| Laravel              | 13.31.0                 |
+| Database             | 11.4.13-MariaDB-ubu2404 |
+| Users                | 1                       |
+| Documents            | 0                       |
+| Lab enabled switches | 0                       |
+| Training DB          | intravault_lab          |
++----------------------+-------------------------+
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+80/tcp                     ALLOW       Anywhere
+443/tcp                    ALLOW       Anywhere
+22/tcp (v6)                ALLOW       Anywhere (v6)
+80/tcp (v6)                ALLOW       Anywhere (v6)
+443/tcp (v6)               ALLOW       Anywhere (v6)
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda2        94G   15G   75G  17% /
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       840Mi       312Mi        33Mi       2.5Gi       2.5Gi
+Swap:          8.0Gi        68Ki       8.0Gi

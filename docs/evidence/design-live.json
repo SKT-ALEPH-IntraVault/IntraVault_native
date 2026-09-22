@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "time": "2026-09-11T01:52:57.560Z",
+  "commit": "a5de9e32aa0cf76da1c40e1726b8227ac28ef176",
+  "url": "https://intravault.duckdns.org",
+  "measurements": [
+    {
+      "width": 1440,
+      "url": "/documents",
+      "heights": [
+        84,
+        84,
+        84,
+        84,
+        84
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "/lab/search",
+      "heights": [
+        84,
+        84,
+        84,
+        84,
+        84
+      ]
+    },
+    {
+      "width": 390,
+      "url": "/documents",
+      "heights": [
+        76,
+        76,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "width": 390,
+      "url": "/lab/search",
+      "heights": [
+        76,
+        76,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "width": 320,
+      "url": "/documents",
+      "heights": [
+        76,
+        76,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "width": 320,
+      "url": "/lab/search",
+      "heights": [
+        76,
+        76,
+        76,
+        76,
+        76
+      ]
+    }
+  ],
+  "securityMode": "전체 보안 ON",
+  "checks": [
+    "Existing gateway and administrator login",
+    "Nine workspace pages and shared back button",
+    "Rounded login and new style sheet applied",
+    "Department cards 84px desktop and 76px mobile",
+    "Department navigation, history back and example download",
+    "No page overflow at 1440/390/320px or JavaScript errors",
+    "Logout returns to login"
+  ]
+}

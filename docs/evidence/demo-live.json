@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "time": "2026-09-10T08:55:26.828Z",
+  "accounts": [
+    {
+      "account": "admin@intravault.test",
+      "role": "system_admin",
+      "visibleDocuments": 24,
+      "status": "PASS"
+    },
+    {
+      "account": "hr.manager@intravault.test",
+      "role": "department_admin",
+      "visibleDocuments": 12,
+      "status": "PASS"
+    },
+    {
+      "account": "hr.employee1@intravault.test",
+      "role": "employee",
+      "visibleDocuments": 11,
+      "status": "PASS"
+    },
+    {
+      "account": "hr.employee2@intravault.test",
+      "role": "employee",
+      "visibleDocuments": 10,
+      "status": "PASS"
+    },
+    {
+      "account": "fin.manager@intravault.test",
+      "role": "department_admin",
+      "visibleDocuments": 12,
+      "status": "PASS"
+    },
+    {
+      "account": "fin.employee1@intravault.test",
+      "role": "employee",
+      "visibleDocuments": 11,
+      "status": "PASS"
+    },
+    {
+      "account": "fin.employee2@intravault.test",
+      "role": "employee",
+      "visibleDocuments": 10,
+      "status": "PASS"
+    },
+    {
+      "account": "dev.manager@intravault.test",
+      "role": "department_admin",
+      "visibleDocuments": 12,
+      "status": "PASS"
+    },
+    {
+      "account": "dev.employee1@intravault.test",
+      "role": "employee",
+      "visibleDocuments": 11,
+      "status": "PASS"
+    },
+    {
+      "account": "dev.employee2@intravault.test",
+      "role": "employee",
+      "visibleDocuments": 10,
+      "status": "PASS"
+    },
+    {
+      "account": "sales.manager@intravault.test",
+      "role": "department_admin",
+      "visibleDocuments": 12,
+      "status": "PASS"
+    },
+    {
+      "account": "sales.employee1@intravault.test",
+      "role": "employee",
+      "visibleDocuments": 11,
+      "status": "PASS"
+    },
+    {
+      "account": "sales.employee2@intravault.test",
+      "role": "employee",
+      "visibleDocuments": 10,
+      "status": "PASS"
+    }
+  ],
+  "uniqueDownloadedMarkers": 24,
+  "notes": [
+    "All 13 accounts logged in through external authentication",
+    "Exact visible document sets checked",
+    "Employee confidential access and foreign confidential access blocked",
+    "All 24 document files downloaded with unique markers"
+  ]
+}

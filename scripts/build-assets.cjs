@@ -1,0 +1,1 @@
+const fs=require('fs'); fs.mkdirSync('public/assets',{recursive:true}); fs.copyFileSync('node_modules/bootstrap/dist/css/bootstrap.min.css','public/assets/bootstrap.min.css'); fs.copyFileSync('node_modules/bootstrap/LICENSE','public/assets/bootstrap.LICENSE'); console.log('Local Bootstrap assets prepared.');

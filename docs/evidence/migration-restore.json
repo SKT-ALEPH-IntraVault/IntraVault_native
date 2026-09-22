@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "time": "2026-09-10T08:22:30.433891+00:00",
+  "checks": [
+    "Backup checksums verified by restore script",
+    "Source rebuilt into a separate Docker project with separate database and file volumes",
+    "Administrator identity, password hash, department and all flag states match source",
+    "Synthetic private file restored byte for byte",
+    "Restored gateway rejects anonymous access and accepts original external credentials",
+    "Temporary restore stack and volumes removed; source verification file removed"
+  ],
+  "limitation": "Restore tested on the Vultr host in an isolated project; physical WTR Pro NAS OS/network not yet tested."
+}

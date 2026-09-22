@@ -1,0 +1,128 @@
+{
+  "release": "417c084ee757eeffa73f0e28a36cf4bb15af5976",
+  "verifiedAt": "2026-09-11T03:20:31.721Z",
+  "backup": "/opt/intravault/backups/migration-20260911T031606Z",
+  "before": {
+    "users": {
+      "count": 13,
+      "digest": "166fff4a268b79c735fd5ca70c735163d9e94c99198906f35cdb560e0439b719"
+    },
+    "departments": {
+      "count": 4,
+      "digest": "06ca545e6f6e46935f897fbc978e73947fd7ab01144619bc4b758da6499b8673"
+    },
+    "documents": {
+      "count": 25,
+      "digest": "a174a214ab274d8f8deefdef052b03dcd8119032a32b1af0545b41ac9734f1e8"
+    },
+    "document_shares": {
+      "count": 4,
+      "digest": "0273f89e1acb3d238575702cc2c1c80015f9d4142c157d9aefe652ec4850d67e"
+    },
+    "favorites": {
+      "count": 8,
+      "digest": "ba93108bbc623672baa009153d4b46a3f288d9716517667a4e0cf0b57ae25c9a"
+    },
+    "lab_flags": {
+      "count": 10,
+      "digest": "3122dfcc464538617db2ad574fa7159f91df0be7def0d4fcb31b8877cf3fad70"
+    },
+    "lab_uploads": {
+      "count": 0,
+      "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "security_controls": {
+      "count": 16,
+      "digest": "a5a20bbffc0b4edad7ecb356e7ccec4e74959e041220ff9dac58e8677486c954"
+    },
+    "files": {
+      "count": 27,
+      "digest": "7bcc0772fa60eadacdfdd5842e401bd457e4cdd36dd4f6dfce45cedf36ddeee3"
+    },
+    "legacy_enabled": 0
+  },
+  "after": {
+    "users": {
+      "count": 13,
+      "digest": "166fff4a268b79c735fd5ca70c735163d9e94c99198906f35cdb560e0439b719"
+    },
+    "departments": {
+      "count": 4,
+      "digest": "06ca545e6f6e46935f897fbc978e73947fd7ab01144619bc4b758da6499b8673"
+    },
+    "documents": {
+      "count": 25,
+      "digest": "a174a214ab274d8f8deefdef052b03dcd8119032a32b1af0545b41ac9734f1e8"
+    },
+    "document_shares": {
+      "count": 4,
+      "digest": "0273f89e1acb3d238575702cc2c1c80015f9d4142c157d9aefe652ec4850d67e"
+    },
+    "favorites": {
+      "count": 8,
+      "digest": "ba93108bbc623672baa009153d4b46a3f288d9716517667a4e0cf0b57ae25c9a"
+    },
+    "lab_flags": {
+      "count": 10,
+      "digest": "3122dfcc464538617db2ad574fa7159f91df0be7def0d4fcb31b8877cf3fad70"
+    },
+    "lab_uploads": {
+      "count": 0,
+      "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "security_controls": {
+      "count": 16,
+      "digest": "a5a20bbffc0b4edad7ecb356e7ccec4e74959e041220ff9dac58e8677486c954"
+    },
+    "files": {
+      "count": 27,
+      "digest": "7bcc0772fa60eadacdfdd5842e401bd457e4cdd36dd4f6dfce45cedf36ddeee3"
+    },
+    "legacy_enabled": 0
+  },
+  "postSmoke": {
+    "users": {
+      "count": 13,
+      "digest": "166fff4a268b79c735fd5ca70c735163d9e94c99198906f35cdb560e0439b719"
+    },
+    "departments": {
+      "count": 4,
+      "digest": "06ca545e6f6e46935f897fbc978e73947fd7ab01144619bc4b758da6499b8673"
+    },
+    "documents": {
+      "count": 25,
+      "digest": "a174a214ab274d8f8deefdef052b03dcd8119032a32b1af0545b41ac9734f1e8"
+    },
+    "document_shares": {
+      "count": 4,
+      "digest": "0273f89e1acb3d238575702cc2c1c80015f9d4142c157d9aefe652ec4850d67e"
+    },
+    "favorites": {
+      "count": 8,
+      "digest": "ba93108bbc623672baa009153d4b46a3f288d9716517667a4e0cf0b57ae25c9a"
+    },
+    "lab_flags": {
+      "count": 10,
+      "digest": "3122dfcc464538617db2ad574fa7159f91df0be7def0d4fcb31b8877cf3fad70"
+    },
+    "lab_uploads": {
+      "count": 0,
+      "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "security_controls": {
+      "count": 16,
+      "digest": "a5a20bbffc0b4edad7ecb356e7ccec4e74959e041220ff9dac58e8677486c954"
+    },
+    "files": {
+      "count": 27,
+      "digest": "7bcc0772fa60eadacdfdd5842e401bd457e4cdd36dd4f6dfce45cedf36ddeee3"
+    },
+    "legacy_enabled": 0
+  },
+  "identical": true,
+  "excluded": [
+    "audit_logs",
+    "sessions",
+    "auto_increment_sequences"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "time": "2026-09-11T01:41:20.543Z",
+  "url": "http://localhost:18082",
+  "checks": [
+    "Login and 15 workspace routes render without JavaScript errors",
+    "Desktop plus 390/320px mobile layouts have no page overflow",
+    "Department click and document back navigation work",
+    "Reduced motion preference applied",
+    "Existing roles, security settings and data unchanged"
+  ],
+  "publicServerChanged": false
+}

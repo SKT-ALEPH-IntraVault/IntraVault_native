@@ -1,0 +1,97 @@
+{
+  "release": "f12ed1e2376a1bfdea8f4358e824c42044908638",
+  "time": "2026-09-11T05:05:25.224Z",
+  "environment": "https://intravault.duckdns.org",
+  "checks": [
+    {
+      "name": "HTTPS login and six exact content-versioned assets",
+      "result": "PASS"
+    },
+    {
+      "name": "Sidebar navigation preserves shell",
+      "result": "PASS"
+    },
+    {
+      "name": "Unified work tabs retain hub, heading, tabs and view nodes",
+      "result": "PASS"
+    },
+    {
+      "name": "Internal loading UI absent and reduced motion respected",
+      "result": "PASS"
+    },
+    {
+      "name": "Search and department update only list",
+      "result": "PASS"
+    },
+    {
+      "name": "Rounded department grid and back button",
+      "result": "PASS"
+    },
+    {
+      "name": "Document drawer, browser back and forward preserve list",
+      "result": "PASS"
+    },
+    {
+      "name": "Temporary document upload and server-confirmed save",
+      "result": "PASS"
+    },
+    {
+      "name": "Favorite changes without document navigation",
+      "result": "PASS"
+    },
+    {
+      "name": "Native download returns uploaded file",
+      "result": "PASS"
+    },
+    {
+      "name": "Temporary document deletion and list refresh",
+      "result": "PASS"
+    },
+    {
+      "name": "Admin hubs retain their tabs and user editor opens over list",
+      "result": "PASS"
+    },
+    {
+      "name": "Practice department browsing without navigation",
+      "result": "PASS"
+    },
+    {
+      "name": "All enhanced interactions kept original document and shell",
+      "result": "PASS"
+    },
+    {
+      "name": "Mobile layout and full-width document panel",
+      "result": "PASS"
+    },
+    {
+      "name": "Direct link and reload return complete page",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "mutations": [
+    {
+      "path": "/documents",
+      "status": 204,
+      "location": "https://intravault.duckdns.org/documents/30"
+    },
+    {
+      "path": "/documents/30/favorite",
+      "status": 204,
+      "location": "https://intravault.duckdns.org/documents/30"
+    },
+    {
+      "path": "/documents/30/favorite",
+      "status": 204,
+      "location": "https://intravault.duckdns.org/documents/30"
+    },
+    {
+      "path": "/documents/30",
+      "status": 204,
+      "location": "https://intravault.duckdns.org/documents"
+    }
+  ],
+  "temporaryDocumentRemoved": true,
+  "mainDocumentNavigationsDuringEnhancedFlow": 0,
+  "nativeDownloadRequests": 1
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "measurements": [
+    {
+      "width": 1440,
+      "url": "/documents",
+      "heights": [
+        84,
+        84,
+        84,
+        84,
+        84,
+        84
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "/lab/search",
+      "heights": [
+        84,
+        84,
+        84,
+        84,
+        84,
+        84
+      ]
+    },
+    {
+      "width": 390,
+      "url": "/documents",
+      "heights": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "width": 390,
+      "url": "/lab/search",
+      "heights": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "width": 320,
+      "url": "/documents",
+      "heights": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "width": 320,
+      "url": "/lab/search",
+      "heights": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ]
+    }
+  ]
+}

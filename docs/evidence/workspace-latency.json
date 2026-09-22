@@ -1,0 +1,47 @@
+{
+  "environment": "http://localhost:18082",
+  "checks": [
+    {
+      "name": "LAT-01 tab responds before server reply and content stays intact",
+      "result": "PASS"
+    },
+    {
+      "name": "LAT-02 failed navigation restores confirmed selection",
+      "result": "PASS"
+    },
+    {
+      "name": "LAT-03 compact list and panel responses omit unused shell",
+      "result": "PASS"
+    },
+    {
+      "name": "LAT-04 favorite skips unchanged background list refresh",
+      "result": "PASS"
+    },
+    {
+      "name": "LAT-05 saving requests list and detail concurrently, not sequentially",
+      "result": "PASS"
+    },
+    {
+      "name": "LAT-06 panel closes before background revalidation responds",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "clickResponseObservedMs": 77,
+    "listBytes": {
+      "full": 19091,
+      "compact": 17361
+    },
+    "panelBytes": {
+      "full": 9387,
+      "compact": 5745
+    },
+    "favoriteRequests": {
+      "post": 1,
+      "get": 1
+    },
+    "saveRefresh": "list and detail both start before list response"
+  },
+  "temporaryDocumentRemoved": true
+}

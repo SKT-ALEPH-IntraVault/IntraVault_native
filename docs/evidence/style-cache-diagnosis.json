@@ -1,0 +1,54 @@
+{
+  "status": "REPRODUCED",
+  "time": "2026-09-11T01:55:53.459Z",
+  "fresh": {
+    "grid": {
+      "display": "grid",
+      "height": 84,
+      "textDecoration": "none"
+    },
+    "card": {
+      "display": "flex",
+      "height": 84,
+      "textDecoration": "none"
+    },
+    "back": {
+      "display": "flex",
+      "height": 44,
+      "textDecoration": "none"
+    },
+    "sheets": [
+      "https://intravault.duckdns.org/assets/bootstrap.min.css",
+      "https://intravault.duckdns.org/assets/app.css",
+      "https://intravault.duckdns.org/assets/modern.css"
+    ]
+  },
+  "stale": {
+    "grid": {
+      "display": "block",
+      "height": 33.59375,
+      "textDecoration": "none"
+    },
+    "card": {
+      "display": "inline",
+      "height": 47,
+      "textDecoration": "underline"
+    },
+    "back": {
+      "display": "inline",
+      "height": 15,
+      "textDecoration": "underline"
+    },
+    "sheets": [
+      "https://intravault.duckdns.org/assets/bootstrap.min.css",
+      "https://intravault.duckdns.org/assets/app.css",
+      "https://intravault.duckdns.org/assets/modern.css"
+    ]
+  },
+  "assetHeaders": {
+    "cacheControl": null,
+    "lastModified": "Fri, 11 Sep 2026 01:49:04 GMT",
+    "etag": "\"3094-65b2b4a07a400-gzip\""
+  },
+  "conclusion": "Changing only app.css to its prior deployed version reproduces collapsed category links and an unstyled back link. Current HTML has no asset version identifiers. The user browser cache itself was not inspected."
+}

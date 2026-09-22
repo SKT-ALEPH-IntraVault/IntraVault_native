@@ -1,0 +1,58 @@
+{
+  "environment": "http://localhost:18082",
+  "checks": [
+    {
+      "name": "HUB-01 overview, documents, favorites and activity share one persistent hub",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-02 document list modes preserve search component and animate results",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-03 delayed reads retain content with no loading UI",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-04 latest tab wins when earlier response arrives late",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-05 history restores tab selection within same hub",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-06 admin users, departments and permissions share a hub",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-07 user editor opens in panel and protects unsaved input",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-13 user save refreshes list, prevents duplicate submits and shows no loading UI",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-08 all and confidential admin documents share a hub",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-09 Security Lab settings and report retain lab hub",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-10 reduced motion disables component animations",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-11 mobile tabs and panels stay within viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "HUB-12 direct document link hydrates hub and opens panel",
+      "result": "PASS"
+    }
+  ],
+  "errors": []
+}

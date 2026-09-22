@@ -1,0 +1,25 @@
+{
+  "environment": "http://localhost:18082",
+  "checks": [
+    {
+      "name": "UX-14 actual GET validation error preserves search input",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-04 close restores list scroll position",
+      "result": "PASS"
+    },
+    {
+      "name": "UX-11 unsaved edit browser-back cancellation preserves URL and input",
+      "result": "PASS"
+    },
+    {
+      "name": "Versioned assets ignore old URLs and reload once on a changed manifest",
+      "result": "PASS"
+    },
+    {
+      "name": "Native HTML remains usable with JavaScript disabled",
+      "result": "PASS"
+    }
+  ]
+}

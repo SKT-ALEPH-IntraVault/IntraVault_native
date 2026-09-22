@@ -1,0 +1,5 @@
+{
+    "status": "PASS",
+    "detail": "V01 stayed ON across app container restart; other 9 flags remained OFF; all restored OFF.",
+    "time": "2026-09-10T07:30:11+00:00"
+}

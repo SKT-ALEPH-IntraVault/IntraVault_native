@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/var/www/html/phpunit.xml" tests="32" assertions="744" errors="0" failures="0" skipped="0" time="16.897905">
+    <testsuite name="Feature" tests="32" assertions="744" errors="0" failures="0" skipped="0" time="16.897905">
+      <testsuite name="Tests\Feature\AdminWorkflowTest" file="/var/www/html/tests/Feature/AdminWorkflowTest.php" tests="2" assertions="10" errors="0" failures="0" skipped="0" time="2.023539">
+        <testcase name="test_only_system_admin_can_issue_accounts_and_roles_are_validated" file="/var/www/html/tests/Feature/AdminWorkflowTest.php" line="5" class="Tests\Feature\AdminWorkflowTest" classname="Tests.Feature.AdminWorkflowTest" assertions="7" time="1.804411"/>
+        <testcase name="test_last_active_admin_and_referenced_department_cannot_be_removed" file="/var/www/html/tests/Feature/AdminWorkflowTest.php" line="17" class="Tests\Feature\AdminWorkflowTest" classname="Tests.Feature.AdminWorkflowTest" assertions="3" time="0.219128"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\AuthenticationTest" file="/var/www/html/tests/Feature/AuthenticationTest.php" tests="3" assertions="213" errors="0" failures="0" skipped="0" time="1.464787">
+        <testcase name="test_login_logout_and_suspension_even_with_v10_on" file="/var/www/html/tests/Feature/AuthenticationTest.php" line="5" class="Tests\Feature\AuthenticationTest" classname="Tests.Feature.AuthenticationTest" assertions="14" time="0.256495"/>
+        <testcase name="test_v09_rate_limit_off_on_off_and_other_switches_preserve_it" file="/var/www/html/tests/Feature/AuthenticationTest.php" line="15" class="Tests\Feature\AuthenticationTest" classname="Tests.Feature.AuthenticationTest" assertions="158" time="0.618396"/>
+        <testcase name="test_v10_session_rotation_off_on_off_and_all_other_switches" file="/var/www/html/tests/Feature/AuthenticationTest.php" line="29" class="Tests\Feature\AuthenticationTest" classname="Tests.Feature.AuthenticationTest" assertions="41" time="0.589896"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\AuthorizationTest" file="/var/www/html/tests/Feature/AuthorizationTest.php" tests="9" assertions="74" errors="0" failures="0" skipped="0" time="4.101065">
+        <testcase name="test_role_and_level_access_matrix" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="7" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="24" time="0.835013"/>
+        <testcase name="test_department_move_preserves_owner_and_share_but_revokes_membership" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="22" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="7" time="0.425851"/>
+        <testcase name="test_confidential_dominates_owner_share_and_department_move" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="34" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="3" time="0.300637"/>
+        <testcase name="test_direct_share_revocation_rechecks_search_favorites_and_download" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="42" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="8" time="0.534062"/>
+        <testcase name="test_employee_cannot_modify_others_documents_or_create_confidential" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="53" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="5" time="0.329371"/>
+        <testcase name="test_managers_manage_only_their_department_and_admin_routes_remain_separate" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="61" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="6" time="0.461871"/>
+        <testcase name="test_search_matches_title_description_filename_without_leaking_foreign_documents" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="69" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="5" time="0.408482"/>
+        <testcase name="test_new_department_is_reflected_and_account_changes_preserve_documents" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="75" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="8" time="0.397061"/>
+        <testcase name="test_audit_records_are_scoped_to_self_and_admin_sees_denials" file="/var/www/html/tests/Feature/AuthorizationTest.php" line="89" class="Tests\Feature\AuthorizationTest" classname="Tests.Feature.AuthorizationTest" assertions="8" time="0.408718"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\CsrfTest" file="/var/www/html/tests/Feature/CsrfTest.php" tests="1" assertions="33" errors="0" failures="0" skipped="0" time="0.746618">
+        <testcase name="test_real_request_forgery_defense_off_on_off_and_isolation" file="/var/www/html/tests/Feature/CsrfTest.php" line="10" class="Tests\Feature\CsrfTest" classname="Tests.Feature.CsrfTest" assertions="33" time="0.746618"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\DemoDatasetTest" file="/var/www/html/tests/Feature/DemoDatasetTest.php" tests="3" assertions="125" errors="0" failures="0" skipped="0" time="1.628628">
+        <testcase name="test_dataset_has_expected_roles_markers_and_access_boundaries" file="/var/www/html/tests/Feature/DemoDatasetTest.php" line="24" class="Tests\Feature\DemoDatasetTest" classname="Tests.Feature.DemoDatasetTest" assertions="111" time="0.848638"/>
+        <testcase name="test_repeated_install_preserves_edited_data_passwords_and_flags" file="/var/www/html/tests/Feature/DemoDatasetTest.php" line="59" class="Tests\Feature\DemoDatasetTest" classname="Tests.Feature.DemoDatasetTest" assertions="9" time="0.605346"/>
+        <testcase name="test_unrelated_existing_users_are_not_modified" file="/var/www/html/tests/Feature/DemoDatasetTest.php" line="77" class="Tests\Feature\DemoDatasetTest" classname="Tests.Feature.DemoDatasetTest" assertions="5" time="0.174644"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\DocumentWorkflowTest" file="/var/www/html/tests/Feature/DocumentWorkflowTest.php" tests="5" assertions="24" errors="0" failures="0" skipped="0" time="1.240417">
+        <testcase name="test_document_crud_file_storage_share_and_confidential_upgrade" file="/var/www/html/tests/Feature/DocumentWorkflowTest.php" line="9" class="Tests\Feature\DocumentWorkflowTest" classname="Tests.Feature.DocumentWorkflowTest" assertions="12" time="0.279442"/>
+        <testcase name="test_file_extension_mime_and_40_mib_boundary" file="/var/www/html/tests/Feature/DocumentWorkflowTest.php" line="29" class="Tests\Feature\DocumentWorkflowTest" classname="Tests.Feature.DocumentWorkflowTest" assertions="3" time="0.228669"/>
+        <testcase name="test_allowed_file_extension_set_matches_rule" file="/var/www/html/tests/Feature/DocumentWorkflowTest.php" line="37" class="Tests\Feature\DocumentWorkflowTest" classname="Tests.Feature.DocumentWorkflowTest" assertions="1" time="0.200732"/>
+        <testcase name="test_arbitrary_storage_path_in_database_is_not_served" file="/var/www/html/tests/Feature/DocumentWorkflowTest.php" line="40" class="Tests\Feature\DocumentWorkflowTest" classname="Tests.Feature.DocumentWorkflowTest" assertions="1" time="0.268922"/>
+        <testcase name="test_guest_cannot_register_or_access_documents" file="/var/www/html/tests/Feature/DocumentWorkflowTest.php" line="44" class="Tests\Feature\DocumentWorkflowTest" classname="Tests.Feature.DocumentWorkflowTest" assertions="7" time="0.262652"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.153603">
+        <testcase name="test_health_endpoint_is_available" file="/var/www/html/tests/Feature/ExampleTest.php" line="5" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="1" time="0.153603"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\LabTest" file="/var/www/html/tests/Feature/LabTest.php" tests="8" assertions="264" errors="0" failures="0" skipped="0" time="5.539247">
+        <testcase name="test_defaults_global_scope_and_non_admin_cannot_change_switches" file="/var/www/html/tests/Feature/LabTest.php" line="8" class="Tests\Feature\LabTest" classname="Tests.Feature.LabTest" assertions="10" time="0.303131"/>
+        <testcase name="test_v01_v02_independent_and_marker_is_actual_file_content" file="/var/www/html/tests/Feature/LabTest.php" line="21" class="Tests\Feature\LabTest" classname="Tests.Feature.LabTest" assertions="13" time="0.490375"/>
+        <testcase name="test_v03_only_designated_report_is_bypassed" file="/var/www/html/tests/Feature/LabTest.php" line="36" class="Tests\Feature\LabTest" classname="Tests.Feature.LabTest" assertions="15" time="0.486235"/>
+        <testcase name="test_v05_reaches_training_marker_but_never_project_secrets_or_symlinks" file="/var/www/html/tests/Feature/LabTest.php" line="44" class="Tests\Feature\LabTest" classname="Tests.Feature.LabTest" assertions="22" time="0.611649"/>
+        <testcase name="test_v06_only_training_read_database_is_exposed_and_off_restores_binding" file="/var/www/html/tests/Feature/LabTest.php" line="57" class="Tests\Feature\LabTest" classname="Tests.Feature.LabTest" assertions="8" time="0.318834"/>
+        <testcase name="test_v07_only_description_output_is_unescaped" file="/var/www/html/tests/Feature/LabTest.php" line="70" class="Tests\Feature\LabTest" classname="Tests.Feature.LabTest" assertions="14" time="0.434947"/>
+        <testcase name="test_v08_keeps_nonexecution_size_and_normal_upload_protection" file="/var/www/html/tests/Feature/LabTest.php" line="82" class="Tests\Feature\LabTest" classname="Tests.Feature.LabTest" assertions="24" time="0.260406"/>
+        <testcase name="test_each_single_switch_preserves_other_document_admin_and_upload_defenses" file="/var/www/html/tests/Feature/LabTest.php" line="97" class="Tests\Feature\LabTest" classname="Tests.Feature.LabTest" assertions="158" time="2.633671"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

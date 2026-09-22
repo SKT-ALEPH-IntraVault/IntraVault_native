@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "time": "2026-09-11T01:20:26.244Z",
+  "url": "http://localhost:18082",
+  "checks": [
+    "Department click clears search and displays all accessible matching files",
+    "Separate practice navigation and upload-focused layout",
+    "Both workspaces support department/all navigation",
+    "Example file downloads by clicking",
+    "Mobile width and optional search expansion"
+  ],
+  "publicServerChanged": false
+}

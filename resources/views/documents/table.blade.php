@@ -1,0 +1,5 @@
+<div class="table-responsive"><table class="table"><thead><tr><th>문서명</th><th>소속 부서</th><th>보안등급</th><th>등록일</th></tr></thead><tbody>
+@forelse($documents as $doc)
+<tr><td><div class="d-flex align-items-center"><span class="doc-icon">{{ strtoupper(pathinfo($doc->original_filename,PATHINFO_EXTENSION)) }}</span><div><a href="{{ route('documents.show',$doc) }}">@if(!app(\App\Services\Security::class)->enabled('S11')){!! $doc->title !!}@else{{ $doc->title }}@endif</a><div class="file-subtitle">@if(!app(\App\Services\Security::class)->enabled('S11')){!! $doc->original_filename !!}@else{{ $doc->original_filename }}@endif</div></div></div></td><td>{{ $doc->department->name }}</td><td><span class="level level-{{ $doc->security_level }}">{{ ['general'=>'일반','department'=>'부서 전용','confidential'=>'기밀'][$doc->security_level] }}</span></td><td class="subtle">{{ $doc->created_at->format('Y.m.d') }}</td></tr>
+@empty<tr><td colspan="4"><div class="empty-state"><strong>표시할 문서가 없습니다.</strong>검색 조건을 바꾸거나 새로운 문서를 등록하세요.</div></td></tr>@endforelse
+</tbody></table></div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/var/www/html/phpunit.xml" tests="2" assertions="36" errors="0" failures="0" skipped="0" time="2.073077">
+    <testsuite name="Feature" tests="2" assertions="36" errors="0" failures="0" skipped="0" time="2.073077">
+      <testsuite name="Tests\Feature\DepartmentBrowsingTest" file="/var/www/html/tests/Feature/DepartmentBrowsingTest.php" tests="2" assertions="36" errors="0" failures="0" skipped="0" time="2.073077">
+        <testcase name="test_department_cards_and_file_lists_follow_document_permissions" file="/var/www/html/tests/Feature/DepartmentBrowsingTest.php" line="6" class="Tests\Feature\DepartmentBrowsingTest" classname="Tests.Feature.DepartmentBrowsingTest" assertions="12" time="1.762497"/>
+        <testcase name="test_practice_department_browsing_matches_upload_download_scope" file="/var/www/html/tests/Feature/DepartmentBrowsingTest.php" line="20" class="Tests\Feature\DepartmentBrowsingTest" classname="Tests.Feature.DepartmentBrowsingTest" assertions="24" time="0.310579"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

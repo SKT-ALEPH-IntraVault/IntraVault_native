@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "time": "2026-09-10T08:18:08.511Z",
+  "url": "https://intravault.duckdns.org",
+  "checks": [
+    "Valid public TLS; HTTP redirects to HTTPS; four unauthenticated routes return 401",
+    "Independent gateway and administrator login; eight application pages; secure session cookie",
+    "40 MiB plus one byte rejected",
+    "40 MiB upload and byte-identical download across public HTTPS",
+    "Temporary document removed; logout blocks admin access",
+    "Real Chrome administrator login and page rendering without JavaScript errors"
+  ]
+}

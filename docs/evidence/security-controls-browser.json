@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "time": "2026-09-11T01:04:25.518Z",
+  "url": "http://localhost:18082",
+  "checks": [
+    "UI: 16 controls; all ON and all OFF presets rendered and saved.",
+    "Anonymous sessions: separate favorites; document creation and HTML upload work with all protections OFF.",
+    "S11: another guest browser executes inert marker OFF; ON escapes; OFF executes again.",
+    "S02: previously issued anonymous session rejected immediately after all ON."
+  ],
+  "notes": [
+    "Dedicated intravault-security-tests volumes; existing preview and Vultr untouched.",
+    "All 16 controls restored ON; temporary document removed; anonymous audit identities retained in test DB."
+  ]
+}

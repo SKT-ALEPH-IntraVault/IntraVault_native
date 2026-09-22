@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "time": "2026-09-10T07:27:38.509Z",
+  "checks": [
+    "Unauthenticated /up /login /documents /admin each returned 401",
+    "External Basic Auth then Laravel login succeeded",
+    "40 MiB multipart file crossed Nginx, Apache, PHP and Laravel successfully"
+  ]
+}
