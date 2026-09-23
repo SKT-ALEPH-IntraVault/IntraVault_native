@@ -24,6 +24,11 @@ if (!$valid) {
     exit(1);
 }
 
+if (!filter_var(ini_get('file_uploads'), FILTER_VALIDATE_BOOLEAN) || (int) ini_get('max_file_uploads') < 1) {
+    fwrite(STDERR, "PHP 파일 업로드 설정을 확인하세요: file_uploads=On, max_file_uploads>=1.\n");
+    exit(1);
+}
+
 foreach ([$main['password'], $lab['password']] as $password) {
     if (!$password || str_starts_with($password, 'replace-with-')) {
         fwrite(STDERR, ".env와 native/database.sql의 비밀번호를 먼저 변경하세요.\n");
